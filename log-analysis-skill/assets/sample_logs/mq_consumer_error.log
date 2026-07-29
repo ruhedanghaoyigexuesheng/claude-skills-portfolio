@@ -1,0 +1,3 @@
+2026-05-15 20:01:55 ERROR order-mq-consumer traceId=mq5566
+Consume topic ORDER_CREATED failed, retry=3/3, messageId=msg_a1b2c3
+com.example.mq.ConsumerException: deserialize payload failed, will send to DLQ

@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+__MACOSX/
+._*
+
+# Windows
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/

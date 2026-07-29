@@ -1,0 +1,14 @@
+2024-06-15 14:32:01.123 INFO  [payment-service] PayCallbackController - Received payment callback, orderId=ORD***123, tradeNo=WX202406151432001, payStatus=SUCCESS
+2024-06-15 14:32:01.125 INFO  [payment-service] PayCallbackController - Callback signature verified, orderId=ORD***123
+2024-06-15 14:32:01.130 INFO  [payment-service] PayNotifyService - Sending MQ message, topic=order.pay.success, bizId=ORD***123
+2024-06-15 14:32:01.135 INFO  [payment-service] PayNotifyService - MQ message sent successfully, messageId=msg-abc-001
+
+2024-06-15 14:32:01.200 INFO  [mq-consumer] OrderPayConsumer - Consuming message, topic=order.pay.success, bizId=ORD***123, messageId=msg-abc-001
+2024-06-15 14:32:01.205 ERROR [mq-consumer] OrderPayConsumer - Failed to update order status, orderId=ORD***123, error=Connection timeout to order-service
+2024-06-15 14:32:01.206 WARN  [mq-consumer] OrderPayConsumer - Message will be retried, retryCount=1, maxRetry=3
+
+2024-06-15 14:32:06.210 INFO  [mq-consumer] OrderPayConsumer - Retry consuming message, bizId=ORD***123, retryCount=2
+2024-06-15 14:32:06.215 ERROR [order-service] OrderUpdateService - update status failed, orderId=ORD***123, fromStatus=UNPAID, toStatus=PAID, traceId=abc123, error=OptimisticLockException: version conflict
+2024-06-15 14:32:06.216 ERROR [mq-consumer] OrderPayConsumer - Consume failed after retry, orderId=ORD***123, traceId=abc123
+
+2024-06-15 14:32:10.001 INFO  [order-service] OrderQueryController - Query order detail, orderId=ORD***123, currentStatus=UNPAID

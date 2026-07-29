@@ -1,0 +1,5 @@
+2024-06-15 14:31:58.001 INFO  [pay-service] traceId=abc123 orderId=ORD***789 wechat callback received payStatus=SUCCESS
+2024-06-15 14:31:58.045 INFO  [pay-service] traceId=abc123 publishing PaySuccessEvent orderId=ORD***789
+2024-06-15 14:31:58.102 WARN  [mq-consumer] traceId=abc123 message redelivered count=2 orderId=ORD***789
+2024-06-15 14:32:01.123 ERROR [order-service] traceId=abc123 orderId=ORD***789 updateOrderStatus failed targetStatus=PAID cause=OptimisticLockException version mismatch expected=3 actual=2
+2024-06-15 14:32:01.125 WARN  [order-service] traceId=abc123 retry scheduled attempt=1/3

@@ -1,0 +1,6 @@
+raw_log: |
+  （粘贴原始日志，样例见 assets/sample_logs/payment_lock_timeout.log）
+trace_id: abc123
+occurred_at: "2024-06-20 14:32:01"
+environment: production
+business_scene: 支付回调

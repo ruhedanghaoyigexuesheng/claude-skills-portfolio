@@ -1,0 +1,17 @@
+# SQL 分析输入 — 见 references/sql-analysis/sql_input_contract.yaml 完整契约
+
+sql: |
+  SELECT o.*, p.pay_status FROM order_info o
+  LEFT JOIN payment_record p ON o.order_id = p.order_id
+  WHERE o.status = 0 AND p.pay_status = 'SUCCESS';
+
+tables:
+  - order_info
+  - payment_record
+
+business_scene: 支付成功但订单未更新排查
+data_volume: order_info 500万+，payment_record 500万+
+api_name: 支付回调后订单状态查询
+symptom: 支付成功订单仍显示未支付
+environment: production
+has_explain: false

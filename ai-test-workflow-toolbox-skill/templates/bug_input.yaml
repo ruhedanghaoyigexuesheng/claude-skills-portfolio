@@ -1,0 +1,13 @@
+title: "支付成功后订单仍显示未支付"
+steps:
+  - "完成微信支付"
+  - "订单列表仍为待支付"
+actual: "status=待支付"
+expected: "status=已支付"
+log_snippet: |
+  （粘贴日志，示例见 examples/bug-analysis/sample-error.log）
+api_response: |
+  {"code":0,"payStatus":"SUCCESS","orderId":"ORD20240620001"}
+version_change: "v2.3.1 优化支付回调"
+environment: production
+trace_id: abc123

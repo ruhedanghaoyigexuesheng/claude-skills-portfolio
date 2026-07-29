@@ -1,0 +1,20 @@
+# SQL 分析输入契约 — 分析前请填写或从对话中提取等价字段
+
+sql: |
+  SELECT * FROM order_info WHERE status = 1
+  ORDER BY create_time DESC LIMIT 100000, 20;
+
+tables:
+  - order_info
+
+business_scene: 订单列表查询
+data_volume: 订单表 500 万+ 行
+api_name: GET /api/orders
+symptom: 列表加载慢，偶发超时
+environment: production
+
+has_explain: false
+# 若有执行计划，设为 true 并附 explain 结果：
+# explain_result: |
+#   id | select_type | table | type | possible_keys | key | rows | Extra
+#   1  | SIMPLE      | order_info | range | idx_status | idx_status | 2500000 | Using where; Using filesort

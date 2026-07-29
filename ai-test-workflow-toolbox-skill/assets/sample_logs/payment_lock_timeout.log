@@ -1,0 +1,2 @@
+2026-05-19 16:33:10 ERROR payment-service traceId=p987
+update order status failed: lock wait timeout exceeded

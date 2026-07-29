@@ -1,0 +1,17 @@
+# Time: 2026-05-20T14:32:18.123456Z
+# User@Host: app_order[app_order] @ 10.0.1.25 [10.0.1.25]
+# Query_time: 8.452103  Lock_time: 0.000021 Rows_sent: 20  Rows_examined: 2500120
+SET timestamp=1747749138;
+SELECT * FROM order_info WHERE status = 1 ORDER BY create_time DESC LIMIT 100000, 20;
+
+# Time: 2026-05-20T15:08:44.987654Z
+# User@Host: app_admin[app_admin] @ 10.0.1.30 [10.0.1.30]
+# Query_time: 12.103892  Lock_time: 0.000015 Rows_sent: 500  Rows_examined: 198765432
+SET timestamp=1747751324;
+SELECT * FROM user_log WHERE date(create_time) = '2026-05-20';
+
+# Time: 2026-05-20T16:21:03.456789Z
+# User@Host: app_order[app_order] @ 10.0.1.25 [10.0.1.25]
+# Query_time: 5.678901  Lock_time: 0.000032 Rows_sent: 20  Rows_examined: 1750000
+SET timestamp=1747755663;
+SELECT * FROM order_info o LEFT JOIN user_info u ON o.user_id = u.id WHERE o.status = 1 ORDER BY o.create_time DESC LIMIT 50000, 20;

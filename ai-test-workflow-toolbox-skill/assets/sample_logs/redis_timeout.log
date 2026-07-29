@@ -1,0 +1,4 @@
+2026-05-16 11:48:03 WARN  cart-service traceId=redis789
+Redis command timeout after 3000ms: GET cart:user_*** hash slot unavailable
+io.lettuce.core.RedisCommandTimeoutException: Command timed out
+pool: active=50 max=50 waiting=12
