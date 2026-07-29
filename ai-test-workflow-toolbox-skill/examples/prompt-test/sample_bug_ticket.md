@@ -1,6 +1,6 @@
 # Bug 单（脱敏样例）
 
-> 用于 Bug 分析 Prompt 完整案例（教程第十一节）。可 @ 引用配合 prompts/待测Prompt-Bug分析.md。
+> 用于 Bug 分析 Prompt 完整案例。可 @ 引用配合 prompts/待测Prompt-Bug分析.md。
 
 ## Bug 标题
 

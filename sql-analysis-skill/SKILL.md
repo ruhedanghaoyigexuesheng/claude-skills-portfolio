@@ -46,7 +46,7 @@ sql-analysis-skill/
 │   ├── risk_levels.md
 │   └── api_sql_mapping.md
 └── assets/
-    ├── sample_sql/           # 练习用样例 SQL
+    ├── sample_sql/           # 样例 SQL
     ├── sample_logs/          # 慢查询日志样例
     └── examples/             # EXPLAIN 结果、完整/错误报告样例
 ```

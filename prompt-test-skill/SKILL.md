@@ -1,5 +1,5 @@
 ---
-name: lark-workflow-prompt-test
+name: prompt-test-workflow
 version: 1.0.0
 description: "Prompt 测试工作流：对用例生成、Bug 分析等 Prompt 执行稳定性、边界、错误输入、多轮一致性与幻觉风险验证，输出结构化测试报告。当用户提及 Prompt 测试、Prompt 质量验证、测试工作流设计、Prompt 稳定性、幻觉测试时使用。"
 metadata:
@@ -16,7 +16,6 @@ metadata:
 - "帮我测试这个 Prompt" / "Prompt 稳不稳定" / "验证 Prompt 质量"
 - 用例生成 Prompt、Bug 分析 Prompt 上线前的工程化验证
 - 团队建立 Prompt 版本规范（v1/v2）与可交接测试报告
-- 课堂练习：按 5.6 教程对 Prompt 跑完整测试流程
 
 ## 核心原则
 
@@ -79,8 +78,7 @@ Prompt 测试的目的，**不是测试 AI 聪不聪明**，而是测试这个 P
 | A7 | [`assets/templates/team_output_columns.md`](assets/templates/team_output_columns.md) | 团队输出列名模板 |
 | A8 | [`system/test_assistant_system.md`](system/test_assistant_system.md) | System 联调文件 |
 | A9 | [`assets/samples/sample_multiturn_script.md`](assets/samples/sample_multiturn_script.md) | 多轮对话脚本 |
-| A10 | [`assets/samples/bad_output_stability_drift.md`](assets/samples/bad_output_stability_drift.md) | 劣质输出对比 |
-| A11 | [`assets/samples/good_output_stability.md`](assets/samples/good_output_stability.md) | 优秀输出对比 |
+| A10 | [`assets/samples/good_output_stability.md`](assets/samples/good_output_stability.md) | 优秀输出对比 |
 | A12 | [`reports/Prompt测试报告模板.md`](reports/Prompt测试报告模板.md) | 报告填写模板 |
 | A13 | [`workflows/Prompt测试工作流.md`](workflows/Prompt测试工作流.md) | 工作流定义 |
 | A14 | [`assets/samples/sample_test_report.md`](assets/samples/sample_test_report.md) | 历史报告样例对照 |

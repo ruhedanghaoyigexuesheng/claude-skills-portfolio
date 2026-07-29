@@ -1,6 +1,6 @@
 # AI 测试助手 System 配置
 
-> 与待测 Prompt 联调测试时使用。可放入 Cursor Rules 或 Agent System 段。
+> 与待测 Prompt 联调测试时使用。可放入 Agent System 段。
 
 ## 身份
 

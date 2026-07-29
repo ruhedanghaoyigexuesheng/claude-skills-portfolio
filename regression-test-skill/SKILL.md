@@ -62,9 +62,7 @@ AI **不能**只说「测这些就够了」，也 **不能**替测试人决定�
 regression-test-skill/
 ├── SKILL.md
 ├── workflows/
-│   ├── regression_testing.md
-│   ├── _template_regression.md
-│   └── CHANGELOG.md
+│   └── regression_testing.md
 ├── references/
 │   ├── 输入契约-回归.md
 │   ├── module-impact-map.md
@@ -77,10 +75,8 @@ regression-test-skill/
 ├── outputs/
 │   └── 回归测试清单输出格式.md
 ├── assets/
-│   ├── samples/              # 版本说明、错误示范、CSV 等
+│   ├── samples/              # 版本说明、CSV 等
 │   └── templates/            # 清单空白模板
-└── fixtures/
-    └── exercise_order_cancel.md
 ```
 
 ## 执行步骤
@@ -106,16 +102,13 @@ regression-test-skill/
 | 编号 | 文件 | 用途 |
 |------|------|------|
 | A1 | [`assets/samples/sample_release_payment_callback.md`](assets/samples/sample_release_payment_callback.md) | 主案例输入（支付回调） |
-| A2 | [`assets/samples/sample_release_order_cancel.md`](assets/samples/sample_release_order_cancel.md) | 课堂练习输入（订单取消） |
-| A3 | [`references/history-bugs-payment.md`](references/history-bugs-payment.md) | 支付域历史 Bug |
-| A4 | [`references/业务链路-支付.md`](references/业务链路-支付.md) | 支付链路补全 |
-| A5 | [`references/module-impact-map.md`](references/module-impact-map.md) | 模块影响映射 |
-| A6 | [`references/P0-P3-风险定义.md`](references/P0-P3-风险定义.md) | 风险等级对齐 |
-| A7 | [`assets/templates/regression_scope_template.md`](assets/templates/regression_scope_template.md) | 清单模板 |
-| A8 | [`assets/samples/bad_regression_example.md`](assets/samples/bad_regression_example.md) | 错误示范对比 |
-| A9 | [`workflows/_template_regression.md`](workflows/_template_regression.md) | 工作流复制模板 |
-| A10 | [`outputs/回归测试清单输出格式.md`](outputs/回归测试清单输出格式.md) | 输出格式规范 |
-| A12 | [`assets/samples/release_scope.md`](assets/samples/release_scope.md) | 发布范围与裁剪练习 |
+| A2 | [`references/history-bugs-payment.md`](references/history-bugs-payment.md) | 支付域历史 Bug |
+| A3 | [`references/业务链路-支付.md`](references/业务链路-支付.md) | 支付链路补全 |
+| A4 | [`references/module-impact-map.md`](references/module-impact-map.md) | 模块影响映射 |
+| A5 | [`references/P0-P3-风险定义.md`](references/P0-P3-风险定义.md) | 风险等级对齐 |
+| A6 | [`assets/templates/regression_scope_template.md`](assets/templates/regression_scope_template.md) | 清单模板 |
+| A7 | [`outputs/回归测试清单输出格式.md`](outputs/回归测试清单输出格式.md) | 输出格式规范 |
+| A8 | [`assets/samples/release_scope.md`](assets/samples/release_scope.md) | 发布范围与裁剪 |
 
 ## 与其他工作流衔接
 
@@ -129,7 +122,7 @@ regression-test-skill/
 
 ## 快速启动示例
 
-在 Cursor 中引用参考资料并粘贴版本说明：
+在 IDE 中引用参考资料并粘贴版本说明：
 
 ```
 @references/history-bugs-payment.md @references/业务链路-支付.md

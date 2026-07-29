@@ -1,5 +1,5 @@
 ---
-name: lark-workflow-ai-test-toolbox
+name: ai-test-workflow-toolbox
 version: 1.0.0
 description: "AI 测试工作流工具箱：整合 Bug 分析、日志排查、SQL 分析、回归测试、Prompt 测试五类助手，含统一入口、风险等级与人工复核规则，支持多助手联动实战。当用户提及 AI 测试工具箱、测试工作流工具箱、Bug+日志+SQL 联动分析、综合测试助手时使用。"
 metadata:
@@ -71,7 +71,7 @@ Bug 分析 + 日志排查 + SQL 分析 + 回归测试 + Prompt 测试
 | [`outputs/回归测试清单输出格式.md`](outputs/回归测试清单输出格式.md) |
 | [`outputs/Prompt测试报告输出格式.md`](outputs/Prompt测试报告输出格式.md) |
 
-## 案例目录（按助手区分，保留单课全部案例）
+## 案例目录
 
 | 目录 | 内容 |
 |------|------|
@@ -114,20 +114,6 @@ references/
 
 请按联动顺序执行 Bug → 日志 → SQL → 回归 四步（可选第 5 步 Prompt 测试）。
 ```
-
-## 与单课 Skill 关系
-
-本工具箱 **集成** 以下来源（已 copy 并统一路径）：
-
-| 原 Skill | 工具箱位置 |
-|----------|------------|
-| `skills/bug-analysis-skill` | `references/bug-analysis/` + `examples/bug-analysis/` |
-| `skills/log-analysis-skill` | `references/log-analysis/` + `assets/sample_logs/` |
-| `skills/sql-analysis-skill` | `references/sql-analysis/` + `assets/sample_sql/` |
-| `skills/regression-test-skill` | `references/regression-test/` + `examples/regression-test/` |
-| `skills/prompt-test-skill` | `references/prompt-test/` + `examples/prompt-test/` |
-
-单课 workflow 更新时，同步更新工具箱对应目录。
 
 ## 验收 checklist
 

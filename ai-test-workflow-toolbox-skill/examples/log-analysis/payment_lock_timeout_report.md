@@ -1,4 +1,4 @@
-# 日志排查报告 — 支付更新订单锁等待超时（课堂练习样例）
+# 日志排查报告 — 支付更新订单锁等待超时（日志排查示例）
 
 > 对应日志：`assets/sample_logs/payment_lock_timeout.log`
 

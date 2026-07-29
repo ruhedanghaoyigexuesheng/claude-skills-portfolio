@@ -2,7 +2,7 @@
 
 > **工具箱路径**：`ai-test-workflow-toolbox-skill/workflows/Prompt测试工作流.md`
 > 样本目录：`examples/prompt-test/` | 参考：`references/prompt-test/`
-> **路径说明**：5.6 教程课堂练习使用 `samples/`；工具箱统一为 `examples/prompt-test/`，@ 引用请用后者。
+
 
 ## Purpose
 
