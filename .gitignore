@@ -6,6 +6,9 @@ __MACOSX/
 # Windows
 Thumbs.db
 
+# Baidu Sync
+*.baiduyun.uploading.cfg
+
 # IDE
 .vscode/
 .idea/
